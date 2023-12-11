@@ -1,27 +1,76 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+ 
+ 
+.header{
+  width: 100vw;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top:16px
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.navigationBar{
+  width: 85%;
+  display: flex;
+  align-items: center;
 }
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.liftNav {
+  width: 50%;
+  
+}
+.rightNav{
+  width: 50%;
+  display: flex;
+  justify-content: end;
+  gap: 24px;
+  align-items: center;
+}
+.sectionNav{
+  display: flex;
+  gap: 24px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #4B5563;
+}
+.modeAndDownloud{
+  display: flex;
+  gap: 16px;
+}
+.downButton{
+  padding: 6px 16px;
+  font-weight: 500;
+  line-height: 24px;
+  background-color:#111827;
+  color: #F9FAFB;
+  border-radius: 12px;
+}
+.mainDiscription{
+  padding: 96px;
+  display: flex;
+  width: 1216px;
+  gap: 90px;
+  margin: 96px 80px;
+  padding-left: 32px;
+  margin-right: 32px;
+}
+.titleText{
+  font-size: 60px;
+  font-weight: 700;
+  letter-spacing: -1.2px;
+}
+.praText{
+  width: 768px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  height: 72px;
+  color: #4B5563;
 }
