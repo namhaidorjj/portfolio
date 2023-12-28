@@ -4,6 +4,9 @@ import { Header } from "@/components/portpolio/Header";
 import { Main } from "@/components/portpolio/Main";
 import { MainText } from "@/components/portpolio/MainText";
 import { Skills } from "@/components/portpolio/Skills";
+import { UpWork } from "@/components/portpolio/UpWork";
+import { Work } from "@/components/portpolio/Work";
+import { Footer, footer } from "@/components/portpolio/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -15,6 +18,9 @@ export default function Home() {
         <Main />
         <MainText />
         <Skills />
+        <UpWork />
+        <Work />
+        <Footer />
       </div>
     </>
   );
